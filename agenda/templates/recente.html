@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contatos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+</head>
+<body class="color_body">
+<div class="box_itens">
+ {% if recente.nome %}
+                <p>Nome : {{ recente.nome }}</p>
+                <p>Email : {{ recente.email }}</p>
+                <p>Residencia : {{ recente.telefone_residencia }}</p>
+                <p>Celular :{{ recente.telefone_celular }}</p>
+                <p>Endereço : {{ recente.endereço }}</p>
+<div class="align-i">
+<a href="{% url 'editar' recente.id %}" class="btn-edit">Editar Contato</a>               
+<form action="{% url 'deletar' recente.id %}" method="POST">{% csrf_token %}
+<input type="submit" value="Deletar Contato" class="btn-delete">
+</form>
+        {% endif %}
+<a href="{% url 'menu' %}" class="btn_menu">Menu inicial</a>
+<a href="{% url 'agenda' %}" class="btn_contatos">Meus Contatos</a>
+</div>
+</body>
+</html>

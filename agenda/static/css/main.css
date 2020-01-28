@@ -1,0 +1,96 @@
+.color_body{
+    background-color:#005fff;
+}
+
+.box_itens{
+    align-self: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    background-color:#72acfd;
+    width: 400px;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Gelasio', serif;
+}
+
+ul {
+ list-style-type: none;
+ }
+
+.box_itens a{
+    color:rgb(0, 26, 173);
+}
+
+
+.img-icon{
+    margin-top:10px;
+}
+
+.box_itens a:hover{
+    color: #FFF;
+    background-color: rgb(0, 162, 255);
+}
+
+.btn_contatos a:hover{
+    color: #FFF;
+    background-color: rgb(0, 162, 255);
+}
+
+.btn_menu a:hover{
+    color: #FFF;
+    background-color: rgb(0, 162, 255);
+}
+
+.btn-delete:hover{
+    color: #FFF;
+    background-color: rgb(0, 162, 255);
+}
+
+.btn-save:hover{
+    color: #FFF;
+    background-color: rgb(0, 162, 255);
+}
+
+.btn-edit:hover{
+    color: #FFF;
+    background-color: rgb(0, 162, 255);
+}
+
+.btn-delete{
+    width:100%;
+    color: rgb(0, 162, 255) ;
+    background-color: #3628ff;
+    border: none;
+}
+
+.btn-edit{
+    color: rgb(0, 162, 255) ;
+    background-color: #3628ff;
+}
+
+.btn_menu{
+    color: rgb(0, 162, 255) ;
+    background-color: #3628ff;
+    
+}
+
+.btn_contatos{
+    color: rgb(0, 162, 255) ;
+    background-color: #3628ff;
+}
+
+.align-i{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn-save{
+    width:100%;
+    color: rgb(0, 162, 255) ;
+    background-color: #3628ff;
+    border: none;
+}
