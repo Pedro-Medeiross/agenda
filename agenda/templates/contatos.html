@@ -13,6 +13,10 @@
 </head>
 <body class="color_body">
 <div class="box_itens">
+<div class="align-i">
+<a href="{% url 'menu' %}" class="btn_menu">Menu inicial</a>
+<a href="{% url 'agenda' %}" class="btn_contatos">Meus Contatos</a>
+</div>
     <ul>{% for lista in lista %}
         <li><a href="{% url 'detalhe' lista.id %}">{{lista.nome}}</li>
         {% endfor %}

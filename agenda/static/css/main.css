@@ -11,13 +11,18 @@
     width: 400px;
     height: auto;
     font-size: 20px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     font-family: 'Gelasio', serif;
 }
 
 ul {
  list-style-type: none;
+ }
+
+ li{
+     margin-top: 5px;
+     padding: 5px  ;
  }
 
 .box_itens a{

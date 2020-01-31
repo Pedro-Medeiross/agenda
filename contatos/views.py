@@ -15,12 +15,9 @@ def criar(request):
     if request.method == 'POST':
         form = ContatosForm(request.POST)
         if form.is_valid():
-            agenda = form.save()
-            nome = form.cleaned_data.get("nome")
-            email = form.cleaned_data.get("email")
-            telefone_residencia = form.cleaned_data.get("telefone_residencia")
-            telefone_celular = form.cleaned_data.get("telefone celular")
-            endereço = form.cleaned_data.get("endereço")
+
+            agenda = form.save(commit = False)
+
             agenda.save()
             return redirect('recente')
     else:
